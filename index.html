@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Rahul Swain — Aspiring Entrepreneur, Python & Web Development learner. Portfolio." />
+    <title>Rahul Swain — Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" aria-labelledby="home-heading">
+            <h1 id="home-heading">Rahul Swain</h1>
+            <h2>Aspiring Entrepreneur | Python & Web Development Learner</h2>
+
+            <figure>
+                <img src="Rahul.jpg" alt="Rahul Swain — profile photo" width="220" />
+                <figcaption>Rahul Swain — Computer Science student & developer</figcaption>
+            </figure>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" aria-labelledby="about-heading">
+            <h3 id="about-heading">About Me</h3>
+            <p>
+                Hello! I'm <strong>Rahul Swain</strong>, a Computer Science student and Python developer.
+                I'm currently learning Full-Stack Development (frontend + backend) to build real products.
+            </p>
+            <p>
+                My dream is to build a tech startup and become a successful entrepreneur. I enjoy creating useful
+                software — especially SaaS products that solve people's problems. After learning web development,
+                my goal is to start freelancing for experience and financial freedom.
+            </p>
+        </section>
+
+        <!-- Skills & Education -->
+        <aside aria-labelledby="skills-heading">
+            <h3 id="skills-heading">Skills & Education</h3>
+            <ul>
+                <li>Python</li>
+                <li>C Programming</li>
+                <li>Full-Stack Development (currently learning)</li>
+                <li>B.Sc. Computer Science</li>
+            </ul>
+        </aside>
+
+        <!-- Projects -->
+        <section id="projects" aria-labelledby="projects-heading">
+            <h3 id="projects-heading">My Projects</h3>
+            <label for="project-progress"><strong>Progress</strong></label><br>
+            <progress id="project-progress" name="project" max="100" value="70">70%</progress>
+            <p>Currently building small web apps and learning deployment.</p>
+        </section>
+    </main>
+
+    <!-- Contact -->
+    <section id="contact" aria-labelledby="contact-heading">
+        <h3 id="contact-heading">Contact Me</h3>
+        <form action="form.txt" method="get" aria-label="Contact form">
+            <label for="fullName">Full Name:</label><br>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" placeholder="Write something..." rows="6" cols="40" required></textarea><br><br>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer role="contentinfo" aria-label="Footer">
+        <hr>
+        <p>&copy; 2025 Rahul Swain | All rights reserved</p>
+        <p><a href="mailto:rahulswain18182112@gmail.com">Email Me</a></p>
+    </footer>
+</body>
+
+</html>
