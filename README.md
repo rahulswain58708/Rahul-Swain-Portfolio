@@ -42,7 +42,7 @@ Currently, I’m learning **Full Stack Development** and improving my **Python**
 ## 📧 Contact
 
 - **Email:** [rahulswain18182112@gmail.com](mailto:rahulswain18182112@gmail.com)
-- **GitHub:** [github.com/<your-username>](https://github.com/<your-username>)
+- **GitHub:** [github.com/<your-username>](https://github.com/rahulswain58708)
 
 ---
 
