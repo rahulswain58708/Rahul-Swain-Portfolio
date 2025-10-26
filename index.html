@@ -4,34 +4,34 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Rahul Swain — Aspiring Entrepreneur, Python & Web Development learner. Portfolio." />
+    <meta name="description"
+        content="Rahul Swain — Aspiring Entrepreneur, Python & Web Development learner. Portfolio." />
     <title>Rahul Swain — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <!-- Navbar -->
         <nav aria-label="Main navigation">
-            <ul>
+            <ul id="navbar">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <hr>
+
     </header>
 
     <main>
         <!-- Home Section -->
         <section id="home" aria-labelledby="home-heading">
-            <h1 id="home-heading">Rahul Swain</h1>
-            <h2>Aspiring Entrepreneur | Python & Web Development Learner</h2>
-
-            <figure>
-                <img src="Rahul.jpg" alt="Rahul Swain — profile photo" width="220" />
-                <figcaption>Rahul Swain — Computer Science student & developer</figcaption>
-            </figure>
+            <div id="home-content">
+                <h1>Hi, I’m Rahul Swain</h1>
+                <h2>Aspiring Entrepreneur & Full Stack Developer</h2>
+                <img id="profile-photo"  src="Rahul.jpg" alt="Rahul Swain — profile photo" width="220" />
+            </div>
         </section>
 
         <!-- About Section -->
@@ -49,7 +49,7 @@
         </section>
 
         <!-- Skills & Education -->
-        <aside aria-labelledby="skills-heading">
+        <aside id="skills" aria-labelledby="skills-heading">
             <h3 id="skills-heading">Skills & Education</h3>
             <ul>
                 <li>Python</li>
@@ -60,39 +60,50 @@
         </aside>
 
         <!-- Projects -->
-        <section id="projects" aria-labelledby="projects-heading">
-            <h3 id="projects-heading">My Projects</h3>
-            <label for="project-progress"><strong>Progress</strong></label><br>
-            <progress id="project-progress" name="project" max="100" value="70">70%</progress>
-            <p>Currently building small web apps and learning deployment.</p>
+       <section id="projects" aria-labelledby="projects-heading">
+  <h3 id="projects-heading">My Projects</h3>
+
+  <div class="cards">
+    <div class="project-card">
+      <h4>Login Page</h4>
+      <img class="project-image" src="loginpage.png" alt="Login page project screenshot">
+      <a href="https://login-page-html-css-tawny.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+      <p>A Simple Login Page Created Using HTML And CSS</p>
+    </div>
+    <div class="project-card">
+      <h4>Portfolio Website</h4>
+      <img class="project-image" src="portfoliowebsite.png" alt="Portfolio website project screenshot">
+      <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+      <p>A Personal Portfolio Website To Showcase My Skills And Projects</p>    
+    </div>
+    
+    </div>
+</section>
+
+        <!-- Contact -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h3 id="contact-heading">Contact Me</h3>
+            <form action="form.txt" method="get" aria-label="Contact form">
+                <label for="fullName">Full Name:</label><br>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" placeholder="Write something..." rows="6" cols="40"
+                    required></textarea><br><br>
+
+                <input id="button" type="submit" value="Send Message">
+            </form>
         </section>
     </main>
 
-    <!-- Contact -->
-    <section id="contact" aria-labelledby="contact-heading">
-        <h3 id="contact-heading">Contact Me</h3>
-        <form action="form.txt" method="get" aria-label="Contact form">
-            <label for="fullName">Full Name:</label><br>
-            <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required><br><br>
-
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
-
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" placeholder="Write something..." rows="6" cols="40" required></textarea><br><br>
-
-            <input type="submit" value="Send Message">
-        </form>
-    </section>
-
     <!-- Footer -->
     <footer role="contentinfo" aria-label="Footer">
-        <hr>
         <p>&copy; 2025 Rahul Swain | All rights reserved</p>
         <p><a href="mailto:rahulswain18182112@gmail.com">Email Me</a></p>
     </footer>
 </body>
 
 </html>
-
-
