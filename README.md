@@ -1,38 +1,29 @@
-# 🌐 My Portfolio — Rahul Swain
+# 🌐 My Portfolio Website
 
-Welcome to my personal **portfolio website**, built using only **HTML5**.  
-It represents my journey as an aspiring **Entrepreneur**, **Python Developer**, and **Full Stack Web Development learner**.
-
----
-
-## 💡 About Me
-
-Hi! I'm **Rahul Swain**, a Computer Science student passionate about coding, problem-solving, and creating impactful products.  
-My dream is to **build a tech startup** that solves real-world problems using technology.  
-Currently, I’m learning **Full Stack Development** and improving my **Python** skills.
+A personal **portfolio website** built using **HTML and CSS**, showcasing my skills, projects, and journey as a web developer.  
+This is my **updated version** after learning CSS — with a better design, layout, and responsive styling.
 
 ---
 
-## 🛠️ Tech Used
+## 🚀 Features
 
-- HTML5 (Semantic Elements)
-- ARIA for accessibility
-- Clean and minimal design
-
----
-
-## 🧠 What This Portfolio Includes
-
-- 🏠 **Home Section:** Introduction and profile photo  
-- 🙋‍♂️ **About Section:** My journey and goals  
-- 🎓 **Skills & Education:** Technologies and qualifications  
-- 💻 **Projects Section:** Progress tracker  
-- 📬 **Contact Form:** For communication  
-- ⚙️ **Footer:** Email and copyright  
+- 🏠 Clean and modern homepage layout  
+- 👨‍💻 About section with personal intro  
+- 💼 Projects section showing my works  
+- 📞 Contact section with links or form  
+- 📱 Fully responsive for all devices  
+- 🎨 Styled using pure CSS (Flexbox + Grid)
 
 ---
 
-## 🚀 Live Demo
+## 🛠️ Tech Stack
+
+- **HTML5** — structure  
+- **CSS3** — styling and responsiveness  
+
+---
+
+
 
 🔗 [View Portfolio](https://rahul-swain-woad.vercel.app/)
 
@@ -42,7 +33,7 @@ Currently, I’m learning **Full Stack Development** and improving my **Python**
 ## 📧 Contact
 
 - **Email:** [rahulswain18182112@gmail.com](mailto:rahulswain18182112@gmail.com)
-- **GitHub:** [github.com/<your-username>](https://github.com/rahulswain58708)
+
 
 ---
 
