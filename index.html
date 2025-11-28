@@ -1,115 +1,236 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Rahul Swain — Portfolio & Pysimplify (Ebook)</title>
     <meta name="description"
-        content="Rahul Swain — Aspiring Entrepreneur, Python & Web Development learner. Portfolio." />
-    <title>Rahul Swain — Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+        content="Rahul Swain — Aspiring entrepreneur, Full-Stack learner. Pysimplify (Python ebook) — draft & preview." />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="canonical" href="https://rahul-portfolio.vercel.app/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
-    <header>
-        <!-- Navbar -->
-        <nav aria-label="Main navigation">
-            <ul id="navbar">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a class="brand" href="#home">Rahul Swain</a>
 
+            <nav aria-label="Main navigation" class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#book">Book</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-links" aria-hidden="false">
+                <!-- Replace YOUR_*_URL with your real profile links -->
+                <a href="https://youtube.com/@rahulswain01?si=urmqY17JHxSINDr9" target="_blank"
+                    rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/rahulswain._/profilecard/?igsh=dm9zdjJleW5tcmE4" target="_blank"
+                    rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/rahul-swain-24a783365/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com/RahulSwain23503?t=d13cqAgXipkTpZAqsxFyxA&s=09" target="_blank"
+                    rel="noopener noreferrer" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://github.com/rahulswain58708" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
     </header>
 
     <main>
-        <!-- Home Section -->
-        <section id="home" aria-labelledby="home-heading">
-            <div id="home-content">
-                <h1>Hi, I’m Rahul Swain</h1>
-                <h2>Aspiring Entrepreneur & Full Stack Developer</h2>
-                <img id="profile-photo"  src="Rahul.jpg" alt="Rahul Swain — profile photo" width="220" />
+        <!-- HERO -->
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1 id="hero-title">Hi, I'm <span class="accent">Rahul Swain</span></h1>
+                    <p class="lead">Aspiring entrepreneur • Full-Stack developer in training • Author of
+                        <strong>Pysimplify</strong> (ebook)
+                    </p>
+                    <p class="muted">PySimplify is a simple, beginner-friendly Python guide that explains everything in
+                        easy English with clear examples and visuals. It helps complete beginners learn programming
+                        step-by-step, with practice in every chapter. (Draft / In progress.)</p>
+
+                    <div class="hero-ctas">
+                        <a class="btn primary" href="#book">View Book</a>
+                        <a class="btn outline" href="#projects">See Projects</a>
+                    </div>
+                </div>
+
+                <div class="hero-image" aria-hidden="true">
+                    <!-- Replace with your profile image -->
+                    <img src="Rahul.jpg" alt="Rahul Swain — profile photo" />
+                </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" aria-labelledby="about-heading">
-            <h3 id="about-heading">About Me</h3>
-            <p>
-                Hello! I'm <strong>Rahul Swain</strong>, a Computer Science student and Python developer.
-                I'm currently learning Full-Stack Development (frontend + backend) to build real products.
-            </p>
-            <p>
-                My dream is to build a tech startup and become a successful entrepreneur. I enjoy creating useful
-                software — especially SaaS products that solve people's problems. After learning web development,
-                my goal is to start freelancing for experience and financial freedom.
-            </p>
+        <!-- ABOUT -->
+        <section id="about" class="panel" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading">About Me</h2>
+                <div class="two-col">
+                    <div>
+                        <p>Hello — I'm <strong>Rahul Swain</strong>, an 18-year-old B.Sc. Computer Science student
+                            learning full-stack development and building real products. My mission is to make
+                            programming simple and practical for beginners.</p>
+                        <p>I write tutorials, build small web apps and am currently writing <em>Pysimplify</em> — an
+                            ebook that teaches Python using mini-projects and clear examples.</p>
+                    </div>
+                    <aside class="panel-card">
+                        <h3>Skills</h3>
+                        <ul class="skills-list">
+                            <li>Python</li>
+                            <li>HTML · CSS · JavaScript</li>
+                            <li>React (learning)</li>
+                            <li>Node & Databases (learning)</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
         </section>
 
-        <!-- Skills & Education -->
-        <aside id="skills" aria-labelledby="skills-heading">
-            <h3 id="skills-heading">Skills & Education</h3>
-            <ul>
-                <li>Python</li>
-                <li>C Programming</li>
-                <li>Full-Stack Development (currently learning)</li>
-                <li>B.Sc. Computer Science</li>
-            </ul>
-        </aside>
+        <!-- BOOK (EBOOK) -->
+        <section id="book" class="panel bg-soft" aria-labelledby="book-heading">
+            <div class="container book-grid">
+                <div class="book-cover">
+                    <!-- Replace with your cover file -->
+                    <img src="PySimplify_EBook.png" alt="Pysimplify cover" />
+                </div>
 
-        <!-- Projects -->
-       <section id="projects" aria-labelledby="projects-heading">
-  <h3 id="projects-heading">My Projects</h3>
+                <div class="book-details">
+                    <h2 id="book-heading">Pysimplify</h2>
+                    <p class="book-sub">Beginner-friendly Python — Learn by building small projects</p>
 
-  <div class="cards">
-    <div class="project-card">
-      <h4>Login Page</h4>
-      <img class="project-image" src="loginpage.png" alt="Login page project screenshot">
-      <a href="https://login-page-html-css-tawny.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-      <p>A Simple Login Page Created Using HTML And CSS</p>
-    </div>
-    <div class="project-card">
-      <h4>Portfolio Website</h4>
-      <img class="project-image" src="portfoliowebsite.png" alt="Portfolio website project screenshot">
-      <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
-      <p>A Personal Portfolio Website To Showcase My Skills And Projects</p>    
-    </div>
-    <div class="project-card">
-      <h4>Blog Website Ui</h4>
-      <img class="project-image" src="blogwebsite.png" alt="blogwebsite project screenshot">
-      <a href="https://responsive-blog-layout-grid.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-      <p>Create a Responsive Blog Website Ui Using HTML and css.</p>    
-    </div>
-    </div>
-</section>
+                    <p><strong>Author:</strong> <a href="#about">Rahul Swain</a></p>
 
-        <!-- Contact -->
-        <section id="contact" aria-labelledby="contact-heading">
-            <h3 id="contact-heading">Contact Me</h3>
-            <form action="form.txt" method="get" aria-label="Contact form">
-                <label for="fullName">Full Name:</label><br>
-                <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required><br><br>
+                    <div class="status-row">
+                        <span class="badge processing">Draft — In progress</span>
+                        <!-- when published change class to "published" and update date below -->
+                        <span class="meta">Expected: <strong>0000-00-00</strong></span>
+                    </div>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+                    <p class="muted">Short preview and sample chapters are available below. When the ebook is published
+                        I'll update ISBN, purchase links, and datePublished in the structured data.</p>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" placeholder="Write something..." rows="6" cols="40"
-                    required></textarea><br><br>
+                    <div class="book-actions">
+                        <a class="btn primary" href="Pysimplify_preview.pdf" download>Download Preview (PDF)</a>
+                        <a class="btn outline" href="#contact">Contact Author</a>
+                    </div>
 
-                <input id="button" type="submit" value="Send Message">
-            </form>
+                    <hr />
+
+                    <h4>What you'll learn</h4>
+                    <ul class="book-list">
+                        <li>Python basics in simple language</li>
+                        <li>4 small projects: Calculator, To-Do, Simple Game, File Reader</li>
+                        <li>How to turn scripts into useful web tools</li>
+                    </ul>
+
+                    <div class="updates">
+                        <h5>Latest update</h5>
+                        <p class="muted">Chapter 2 draft complete — examples being added. (Last updated: 2025-11-28)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="panel" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading">Projects</h2>
+                <div class="cards">
+                    <!-- Example project card -->
+                    <article class="card">
+                        <img src="loginpage.png" alt="Login page project" />
+                        <h3>Login Page</h3>
+                        <p>A simple login UI built with HTML & CSS.</p>
+                        <a class="muted-link" href="https://login-page-html-css-tawny.vercel.app/" target="_blank"
+                            rel="noopener">Live demo</a>
+                    </article>
+
+                    <article class="card">
+                        <img src="portfoliowebsite.png" alt="Portfolio project" />
+                        <h3>Portfolio Website</h3>
+                        <p>My personal portfolio to showcase projects and writing.</p>
+                        <a class="muted-link" href="#" target="_blank" rel="noopener">Live demo</a>
+                    </article>
+
+                    <article class="card">
+                        <img src="blogwebsite.png" alt="Blog UI project" />
+                        <h3>Blog Website UI</h3>
+                        <p>Responsive blog layout using CSS grid.</p>
+                        <a class="muted-link" href="https://responsive-blog-layout-grid.vercel.app/" target="_blank"
+                            rel="noopener">Live demo</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="panel bg-soft" aria-labelledby="contact-heading">
+            <div class="container contact-grid">
+                <div>
+                    <h2 id="contact-heading">Contact</h2>
+                    <p>If you want to preview chapters, collaborate, or hire me — send a message.</p>
+
+                    <form action="#" method="get" aria-label="Contact form" class="contact-form">
+                        <label for="fullname">Full name</label>
+                        <input id="fullname" name="fullname" type="text" placeholder="Your name" required />
+
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Write your message..."
+                            required></textarea>
+
+                        <button class="btn primary" type="submit">Send message</button>
+                    </form>
+                </div>
+
+                <aside class="panel-card">
+                    <h3>Follow & Subscribe</h3>
+                    <p class="muted">Get updates when new chapters are posted.</p>
+
+                    <ul class="social-list">
+                        <li><a href="https://youtube.com/@rahulswain01?si=urmqY17JHxSINDr9" target="_blank"
+                                rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <li><a href="https://www.instagram.com/rahulswain._/profilecard/?igsh=dm9zdjJleW5tcmE4"
+                                target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/rahul-swain-24a783365/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+                                    class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://x.com/RahulSwain23503?t=d13cqAgXipkTpZAqsxFyxA&s=09" target="_blank"
+                                rel="noopener noreferrer" aria-label="X (Twitter)"><i
+                                    class="fa-brands fa-x-twitter"></i></a></li>
+                        </li>
+                        <li><a href="https://github.com/rahulswain58708" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+
+                    <hr />
+                    <p><strong>Email:</strong> <a
+                            href="mailto:rahulswain18182112@gmail.com">rahulswain18182112@gmail.com</a></p>
+                </aside>
+            </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer role="contentinfo" aria-label="Footer">
-        <p>&copy; 2025 Rahul Swain | All rights reserved</p>
-        <p><a href="mailto:rahulswain18182112@gmail.com">Email Me</a></p>
+    <footer class="site-footer" role="contentinfo">
+        <div class="container footer-inner">
+            <p>&copy; 2025 Rahul Swain — All rights reserved</p>
+            <p class="small muted">Built with care • Last updated: 2025-11-28</p>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
-
