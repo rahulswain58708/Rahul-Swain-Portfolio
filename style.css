@@ -65,15 +65,14 @@ body{
 .skills-list li{padding:8px 0;border-bottom:1px dashed rgba(255,255,255,0.02);color:var(--muted);}
 
 /* Book section */
-.book-grid{display:grid;grid-template-columns:260px 1fr;gap:28px;align-items:start;}
-.book-cover img{width:100%;height:auto;border-radius:10px;box-shadow:0 20px 50px rgba(0,0,0,0.6);}
-.book-sub{color:var(--muted);margin-top:6px;}
-.status-row{display:flex;align-items:center;gap:12px;margin:12px 0;}
-.badge{padding:8px 10px;border-radius:999px;font-weight:600;font-size:0.9rem;}
-.badge.processing{background:linear-gradient(90deg,#ffb86b33, #ff9f5133);color:#ffb86b;}
-.badge.published{background:linear-gradient(90deg,#a6ffcb33,#66d3a633);color:#0a7d3c;}
-.meta{color:var(--muted);font-size:0.95rem;}
-.book-actions{display:flex;gap:12px;margin-top:12px;}
+.book-grid
+.book-cover img
+.book-sub
+.status-row
+.badge
+.meta
+.book-actions
+.book-list
 
 /* Book list */
 .book-list{list-style:disc;margin-left:18px;color:var(--muted);}
@@ -111,4 +110,45 @@ body{
   .brand{font-size:1rem;}
   .hero-text h1{font-size:1.5rem;}
   .hero-image img{width:180px;height:180px;}
+}
+/* Products section (reuses card system) */
+#products .cards {
+  margin-top: 20px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card img {
+  height: 180px;
+  object-fit: contain;
+  background: rgba(255,255,255,0.02);
+  padding: 12px;
+}
+
+.product-card h3 {
+  font-size: 1.05rem;
+}
+
+.product-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.product-card .price {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  color: var(--accent);
+}
+
+.product-card .btn {
+  margin-top: 8px;
+  text-align: center;
+}
+.product-card:hover {
+  transform: translateY(-3px);
+  transition: transform 0.2s ease;
 }
