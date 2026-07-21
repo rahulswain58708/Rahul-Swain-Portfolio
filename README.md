@@ -40,3 +40,11 @@ Entrepreneur, founder of **MediaSpectAI**, and author of **PySimplify**.
 │  └─ youtube-channel.png    ← YouTube channel banner
 └─ README.md
 ```
+
+## Notes for deployment
+- The YouTube subscribe embed uses channel ID `UCMa6j5HASNh1Xlb9l3RRLaQ`.
+  If YouTube ever changes/deprecates the `subscribe_embed` endpoint, the
+  "Subscribe on YouTube" button next to it still links directly to the
+  channel, so the CTA never breaks.
+- Swap `assets/youtube-channel.png` for an updated banner export any time
+  the channel art changes — no other code needs to change.
