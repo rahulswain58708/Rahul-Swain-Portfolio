@@ -1,33 +1,50 @@
-# Rahul Swain — Portfolio & **Pysimplify** (Ebook)
+# Rahul Swain — Personal Brand Site
 
-A clean, responsive **portfolio website** built with **HTML, CSS, and JavaScript** that showcases my skills, projects, and my in-progress ebook **Pysimplify** — a beginner-friendly Python guide. This is the updated design and final version for the ebook preview.
+A redesigned, premium personal-branding portfolio for Rahul Swain — Tech
+Entrepreneur, founder of **MediaSpectAI**, and author of **PySimplify**.
 
-🔗 Live demo: https://rahul-swain-woad.vercel.app/  
+🔗 Live demo: https://rahul-swain-woad.vercel.app/
 ✉ Email: rahulswain18182112@gmail.com
 
 ---
 
-## 🚀 Highlights
-- Modern, mobile-first responsive layout (Flexbox + Grid)  
-- Sections: Hero, About, Projects, Book (Pysimplify) and Contact  
-- JSON-LD Book structured data injected/updated by `script.js` for better SEO  
-- Smooth scrolling, active nav highlighting, contact validation, preview download counter  
-- Easy to update when the ebook is published via `updateBookStatus()` helper
+## What changed in this redesign
+- New visual identity: "Verified" — a forensic scan-reticle motif (corner
+  brackets + scanning line) borrowed from the MediaSpectAI mark, paired with
+  a duotone cyan/amber palette pulled from the PySimplify cover.
+- New typography system: **Space Grotesk** (display), **Inter** (body),
+  **JetBrains Mono** (eyebrows / scan-readout labels).
+- New **Build in Public** section featuring the YouTube channel
+  (@rahulswaintech), channel banner, and an official YouTube subscribe
+  widget embed.
+- Scroll-reveal animations, hover micro-interactions, animated hero scan
+  line, sticky glass header with active-section highlighting.
+- Fully responsive down to mobile, keyboard-focus visible, respects
+  `prefers-reduced-motion`.
 
----
+## Tech
+- **HTML5** — structure
+- **CSS3** — custom property design-token system, Flexbox + Grid
+- **JavaScript (vanilla)** — smooth scroll, active-nav, IntersectionObserver
+  reveal animation, contact form validation
 
-## 🛠️ Tech Used
-- **HTML5** — structure  
-- **CSS3** — styling & responsive layout (Flexbox + Grid)  
-- **JavaScript (vanilla)** — smooth scroll, form validation, JSON-LD injection, small UI helpers
-
----
-
-## 📂 Project Structure
-├─ index.html ← main portfolio + book page (ebook)
-├─ style.css ← styles for the site
-├─ script.js ← JS: smooth scroll, validation, JSON-LD injector, updateBookStatus()
+## Project structure
+```
+├─ index.html
+├─ style.css
+├─ script.js
 ├─ assets/
-│ └─ PySimplify_EBook.png ← ebook cover (use your own)
-├─ Pysimplify_preview.pdf ← optional preview PDF (download link)
-└─ README.md ← this file
+│  ├─ profile_picture.png
+│  ├─ logo2.png              ← MediaSpectAI logo
+│  ├─ PySimplify_EBook.png   ← ebook cover
+│  └─ youtube-channel.png    ← YouTube channel banner
+└─ README.md
+```
+
+## Notes for deployment
+- The YouTube subscribe embed uses channel ID `UCMa6j5HASNh1Xlb9l3RRLaQ`.
+  If YouTube ever changes/deprecates the `subscribe_embed` endpoint, the
+  "Subscribe on YouTube" button next to it still links directly to the
+  channel, so the CTA never breaks.
+- Swap `assets/youtube-channel.png` for an updated banner export any time
+  the channel art changes — no other code needs to change.
